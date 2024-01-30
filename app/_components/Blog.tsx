@@ -20,7 +20,7 @@ const BlogSection = (props: Props) => {
 
       <div className={styles.cardWrapper}>
         {topPosts.map((post: Post) => (
-          <Link href={`/blog/${post.id}`} key={post.id}>
+          <Link href={`/${post.page}`} key={post.id}>
               <BlogCard post={post} />
           </Link>
         ))}

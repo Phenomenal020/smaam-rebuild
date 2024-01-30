@@ -12,4 +12,14 @@ export interface Post {
     date: string;
     header: string;
     body: string;
+    page: string;
+}
+
+export interface CalendarData {
+    id: number,
+    header: string;
+    comment: string;
+    day: number;
+    month: string;
+    year: number;
 }

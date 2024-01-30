@@ -1,35 +1,62 @@
-import React from 'react';
+'use client'
+import React, { useState, useEffect } from 'react';
+import { CalendarInfo } from '@/data/calendarData';
 
 const Calendar = () => {
-  return (
-    <div className="bg-gray-100 p-6 flex justify-center items-center max-width min-w-[360px]">
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
-        <div className="p-6 flex flex-col">
-          <h2 className="text-2xl font-bold text-gray-700 mb-3">Resumption</h2>
-          <p className="text-gray-600">
-            Students are required to resume for the 2023/2034 Academic session
-          </p>
-          {/* <div className="mt-4">
-            <button className="text-white bg-blue-600 hover:bg-blue-700 font-semibold py-2 px-4 rounded">
-              More Info
-            </button>
-          </div> */}
-        </div>
+  const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
-        <div className="md:w-72 bg-blue-800 text-white p-6 flex flex-col items-center justify-center">
-          <div className="flex items-center justify-between w-full">
-            <span>&#9650;</span> {/* This is an upward arrow */}
-            <span>&#9660;</span> {/* This is a downward arrow */}
+  // Handler to go to the next item
+  const handleNext = () => {
+    setFade(false);
+    setTimeout(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % CalendarInfo.length);
+      setFade(true);
+    }, 300); // The timeout duration should match your CSS transition duration
+  };
+
+  // Handler to go to the previous item
+  const handlePrevious = () => {
+    setFade(false);
+    setTimeout(() => {
+      setIndex((prevIndex) => (prevIndex - 1 + CalendarInfo.length) % CalendarInfo.length);
+      setFade(true);
+    }, 300); // The timeout duration should match your CSS transition duration
+  };
+
+  return (
+    <section className='bg-gray-100 p-6 max-w-full min-w-[360px] max-width'>
+      <h4 className="text-xl font-bold text-center mb-3">
+        Calendar
+      </h4>
+
+      <div className="flex justify-center items-center max-w-[400px] md:max-w-none md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+          <div className="p-6 flex flex-col md:w-[60%]">
+            <h2 className="text-2xl font-bold text-gray-700 mb-3 capitalize">{CalendarInfo[index].header}</h2>
+            <p className="text-gray-600" style={{ transition: 'opacity 0.3s', opacity: fade ? 1 : 0 }}>
+              {CalendarInfo[index].comment}
+            </p>
           </div>
-          <div className="my-4 flex-col justify-center">
-            <p className="text-4xl font-bold text-center mb-3">11</p>
-            <p className="uppercase text-center text-2xl mb-2">Sept</p>
-            <p className="text-xl text-center">2023</p>
+
+          <div className=" md:min-w-[230px] bg-blue-800 text-white p-6 flex flex-col items-center justify-center md:w-[40%]">
+            <div className="flex items-center justify-between w-full">
+              <button onClick={handlePrevious}>&#9650;</button>
+              <button onClick={handleNext}>&#9660;</button>
+            </div>
+            <div className="my-4 flex-col justify-center" style={{ transition: 'opacity 0.3s', opacity: fade ? 1 : 0 }}>
+              <p className="text-4xl font-bold text-center mb-3">{CalendarInfo[index].day}</p>
+              <p className="uppercase text-center text-2xl mb-2">{CalendarInfo[index].month}</p>
+              <p className="text-xl text-center">{CalendarInfo[index].year}</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+    </section>
   );
 };
 
 export default Calendar;
+
+

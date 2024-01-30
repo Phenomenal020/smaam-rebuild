@@ -13,13 +13,12 @@ const FeaturedNewsSection = () => {
         <>
             <Header text='our blog' />
             <section className="bg-gray-100 py-10 max-width min-w-[360px]">
-                <div className="container mx-auto px-4">
+                <div className="mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
                         {featuredPosts.map((post: Post) => (
-                            <div>
+                             <Link href={`/${post.page}`} key={post.id}>
                                 <BlogCard post={post} key={post.id} type='list' />
-                            </div>
-
+                            </Link>
                         ))}
                     </div>
                     <div className="text-center mt-8">

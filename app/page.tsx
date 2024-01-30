@@ -13,9 +13,9 @@ export default function Home() {
       <About />
       <Glance />
       <Admission />
-      <Testimonials />
-      <Calendar />
       <BlogSection />
+      <Calendar />
+      <Testimonials />
     </main>
   );
 }
