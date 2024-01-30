@@ -1,0 +1,199 @@
+.container {
+  padding: 1em;
+  width: 100%;
+  height: max-content;
+  background: #1b3167e5;
+  max-width: 1400px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.topDiv {
+  height: 60%;
+  width: 100%;
+  margin: 0.5em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  color: #fff;
+}
+
+.quoteBox {
+  font-size: 1rem;
+  margin: 1em auto;
+  position: relative;
+}
+
+.quotesPara {
+  text-align: center;
+  line-height: 1.25;
+}
+
+.quoteAuthor {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: .33em;
+}
+
+.quoteRole {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.commentWrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 40%;
+  padding: 1em;
+}
+
+.left,
+.right,
+.mid {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid {
+  width: 50%;
+}
+
+.imgWrapper,
+.midImgWrapper {
+  /* width: 4.5em; */
+  width: 3em;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  position: relative;
+}
+
+.midImgWrapper {
+  /* width: 7em; */
+  width: 5em;
+  aspect-ratio: 1/1;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/* ------------------------- PREV/NEXT ICONS -------------------- */
+/* Previous button */
+.customPrevBtn  {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customPrevBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.customPrevBtn i {
+  font-size: 1.5rem;
+  color: #fff;
+  background: fff;
+}
+
+/* Next button */
+.customNextBtn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customNextBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.customNextBtn i {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Center the navigation buttons vertically */
+.swiperBtnPrev,
+.swiperBtnNext  {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@media screen and (min-width: 481px) {
+  /* .quoteBox {
+    font-size: 1.1rem;
+  }
+  .quoteAuthor {
+    font-size: 1.05rem;
+  } */
+  .imgWrapper,
+  .midImgWrapper {
+    width: 3.5em;
+  }
+  .midImgWrapper {
+    width: 6em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 2em;
+  }
+  .topDiv {
+    width: 80%;
+    padding: 1.25em;
+  }
+  .quoteBox {
+    margin: 1.25em auto; 
+    /* font-size: 1.25rem; */
+  }  
+  .quoteAuthor {
+    font-size: 1.15rem;
+  }
+  .commentWrapper {
+    padding: 1.25em;
+  }
+  .imgWrapper,
+  .midImgWrapper {
+    width: 4.5em;
+  }
+  .midImgWrapper {
+    width: 7em;
+  }
+}

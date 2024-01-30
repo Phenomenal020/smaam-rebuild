@@ -4,10 +4,7 @@ import Link from "next/link"
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
-
-type Props = {}
-
-function Navbar({ }: Props) {
+function Navbar() {
     return (
         <nav className="navbar bg-base-100 flex flex-col max-width min-w-[360px]">
 
@@ -44,7 +41,7 @@ function Navbar({ }: Props) {
                                 <summary className="nav-link">
                                     about
                                 </summary>
-                                <ul className="bg-base-100 rounded-t-none min-w-[150px] capitalize">
+                                <ul className="bg-base-100 rounded-t-none min-w-[150px] capitalize z-30">
                                     <li><Link href='/welcome' className="hover:font-bold w-full">welcome note</Link></li>
                                     <li><Link href='/the-school' className="hover:font-bold w-full">the school</Link></li>
                                 </ul>

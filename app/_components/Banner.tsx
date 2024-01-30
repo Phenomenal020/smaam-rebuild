@@ -19,7 +19,7 @@ function Banner({ }: Props) {
                 <div className="w-full sm:w-[80%] lg:w-[48%] text-center lg:text-left">
                     <h1 className="text-2xl md:text-5xl font-bold">Box Office News!</h1>
                     <p className="py-2 lg:py-6 text-sm md:text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <Link href='/admission-process' className="btn btn-primary">Get Started</Link>
+                    <Link href='/admission-process' className="link-btn">Get Started</Link>
                 </div>
             </div>
         </div>

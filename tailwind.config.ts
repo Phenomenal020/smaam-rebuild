@@ -19,7 +19,7 @@ const config: Config = {
       screens: {
         'xs': '480px',
         'sm': '640px',
-        'md': '768px',
+        'md': '800px',
         'lg': '992px',
         'xl': '1280px',
         '2xl': '1536px',
