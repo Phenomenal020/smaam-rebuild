@@ -1,3 +1,4 @@
+import { newsReader } from "@/utils/fonts";
 import styles from "./header.module.css";
 
 type Props = {
@@ -7,7 +8,7 @@ type Props = {
 function Header({ text }: Props) {
   return (
     <section className={styles.container}>
-      <h2 className={styles.headerText}>{text}</h2>
+      <h2 className={`${styles.headerText} ${newsReader.className}`}>{text}</h2>
     </section>
   );
 }

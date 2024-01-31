@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Header from '../_components/Header';
+import { newsReader } from "@/utils/fonts";
 
 const Mission = () => {
     return (
@@ -8,33 +9,33 @@ const Mission = () => {
             <div className="container mx-auto px-4">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div className="bg-blue-800 text-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="bg-primaryLight text-white p-6 rounded-lg shadow-md flex flex-col items-center">
                         <Image src='/images/ourVision.png' width={70} height={70} alt="vision icon" />
-                        <h4 className="text-lg font-semibold mt-4 capitalize">Our Vision</h4>
+                        <h4 className={`${newsReader.className} text-xl font-semibold mt-4 capitalize`}>Our Vision</h4>
                         <p className="text-center mt-2 text-sm md:text-[15px] leading-6">
                             To create a nurturing school community where children excel in their achievements and are inspired to continue learning in the future.
                         </p>
                     </div>
-                    <div className="bg-blue-800 text-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="bg-primaryLight text-white p-6 rounded-lg shadow-md flex flex-col items-center">
                         <Image src='/images/ourMission.png' width={70} height={70} alt="mission icon" />
-                        <h4 className="text-lg font-semibold mt-4 capitalize">Our mission</h4>
+                        <h4 className={`${newsReader.className} text-xl font-semibold mt-4 capitalize`}>Our mission</h4>
                         <p className="text-center mt-2  text-sm md:text-[15px] leading-6">
                             To produce children who are morally, socially and academically
                             sound.
                         </p>
                     </div>
-                    <div className="bg-blue-800 text-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="bg-primaryLight text-white p-6 rounded-lg shadow-md flex flex-col items-center">
                         <Image src='/images/ourGoals.png' width={70} height={70} alt="goals icon" />
-                        <h4 className="text-lg font-semibold mt-4 capitalize">Our goals</h4>
+                        <h4 className={`${newsReader.className} text-xl font-semibold mt-4 capitalize`}>Our goals</h4>
                         <p className="text-center mt-2  text-sm md:text-[15px] leading-6">
                             To provide a nurturing and inclusive learning environment that
                             empowers students to achieve academic excellence, enhance social
                             skills, be compassionate and be creative.
                         </p>
                     </div>
-                    <div className="bg-blue-800 text-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="bg-primaryLight text-white p-6 rounded-lg shadow-md flex flex-col items-center">
                         <Image src='/images/ourCoreValues.png' width={70} height={70} alt="goals icon" />
-                        <h4 className="text-lg font-semibold mt-4 capitalize">our core values</h4>
+                        <h4 className={`${newsReader.className} text-xl font-semibold mt-4 capitalize`}>our core values</h4>
                         <p className="text-center mt-2  text-sm md:text-[15px] leading-6">
                             Integrity
                             <br />
@@ -59,9 +60,9 @@ const AboutAndAnthem = () => {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div>
-                        <h4 className="text-xl font-bold border-b-2 border-gray-200 mb-4">About The School</h4>
+                        <h4 className={`${newsReader.className} text-xl font-bold border-b-2 border-gray-200 mb-4`}>About The School</h4>
                         <p className="mb-4 text-justify text-sm md:text-[15px] leading-6">
-                            St. Michael the Archangel Academy Makurdi, a beacon of educational excellence, has a remarkable history that began on September 10, 2018. Founded by Mr. Mathew Ezenwaka and Mrs.Stella Ezenwaka, the school opened its doors with a population of 141 eager pupils, housed in 10 classrooms, and supported by a dedicated team of fourteen staff members.
+                            St. Michael the Archangel Academy Makurdi, a beacon of educational excellence, has a remarkable history that began on September 10, 2018. Founded by Mrs.Stella Ezenwaka, the school opened its doors with a population of 141 eager pupils, housed in 10 classrooms, and supported by a dedicated team of fourteen staff members.
                         </p>
                         <p className="mb-4 text-justify text-sm md:text-[15px] leading-6">
                             One of the school&apos;s earliest symbols of unity and pride was its
@@ -93,7 +94,7 @@ const AboutAndAnthem = () => {
                     </div>
 
                     <div>
-                        <h4 className="text-xl font-bold border-b-2 border-gray-200 mb-4">National Anthem</h4>
+                        <h4 className={`${newsReader.className} text-xl font-bold border-b-2 border-gray-200 mb-4`}>National Anthem</h4>
                         <p className="mb-4 text-sm md:text-[15px] leading-6">
                             Arise, O compatriots
                             <br /> Nigeria's call obey
@@ -130,7 +131,7 @@ const AboutAndAnthem = () => {
                             <br />
                             To build a nation where peace and justice shall reign.
                         </p>
-                        <h4 className="text-xl font-bold border-b-2 border-gray-200 mb-4 mt-8">Our Anthem</h4>
+                        <h4 className={`${newsReader.className} text-xl font-bold border-b-2 border-gray-200 mb-4 mt-8`}>Our Anthem</h4>
                         <p className="mb-4 text-sm md:text-[15px] leading-6">
                             Beloved St.Michael,
                             <br /> The Patron of St.Michael the Archangel Academy,

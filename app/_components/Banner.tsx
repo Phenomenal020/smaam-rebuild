@@ -1,3 +1,4 @@
+import { newsReader } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,9 +18,9 @@ function Banner({ }: Props) {
                     />
                 </div>
                 <div className="w-full sm:w-[80%] lg:w-[48%] text-center lg:text-left">
-                    <h1 className="text-2xl md:text-5xl font-bold">Box Office News!</h1>
-                    <p className="py-2 lg:py-6 text-sm md:text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <Link href='/admission-process' className="link-btn">Get Started</Link>
+                    <h1 className={` ${newsReader.className} text-2xl md:text-5xl font-bold`}>First Step to Excellence</h1>
+                    <p className="py-2 lg:py-6 text-sm md:text-base">Building a Foundation for Lifelong Learning: Our School is a Beacon for Young Explorers, Dreamers, and Leaders Ready to Change the World</p>
+                    <Link href='/admission-process' className="link-btn">Get Started &rarr;</Link>
                 </div>
             </div>
         </div>

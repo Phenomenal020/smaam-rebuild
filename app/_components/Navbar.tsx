@@ -1,10 +1,17 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
+
+import { usePathname } from 'next/navigation'
 
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 function Navbar() {
+
+    const pathname = usePathname()
+
     return (
         <nav className="navbar bg-base-100 flex flex-col max-width min-w-[360px]">
 
@@ -35,21 +42,44 @@ function Navbar() {
                 {/* Menu */}
                 <div className="hidden lg:block w-fit mx-4">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link href='/' className="nav-link hover:font-bold">Home</Link ></li>
-                        <li>
+                        <li className={pathname === '/' ? 'bg-[#e0e0e0]' : ''}>
+                            <Link href='/' className={`capitalize hover:font-extrabold ${pathname === '/' ? 'font-bold' : ''}`}>Home</Link>
+                        </li>
+                        <li className={pathname === '/the-school' || pathname === '/welcome' ? 'bg-[#e0e0e0]' : ''}>
                             <details>
-                                <summary className="nav-link">
+                                <summary className="capitalize">
                                     about
                                 </summary>
                                 <ul className="bg-base-100 rounded-t-none min-w-[150px] capitalize z-30">
-                                    <li><Link href='/welcome' className="hover:font-bold w-full">welcome note</Link></li>
-                                    <li><Link href='/the-school' className="hover:font-bold w-full">the school</Link></li>
+                                    <li>
+                                        <Link href='/welcome' className={`capitalize hover:font-extrabold ${pathname === '/welcome' ? 'font-bold' : ''}`}>
+                                            welcome note
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href='/the-school' className={`capitalize hover:font-extrabold ${pathname === '/the-school' ? 'font-bold' : ''}`}>
+                                            the school
+                                        </Link>
+                                    </li>
                                 </ul>
                             </details>
                         </li>
-                        <li><Link href='/admission-process' className="nav-link hover:font-bold">admission</Link ></li>
-                        <li><Link href='/blog' className="nav-link hover:font-bold">news/blog</Link ></li>
-                        <li><Link href='/contact' className="nav-link hover:font-bold">contact</Link ></li>
+                        <li className={pathname === '/admission-process' ? 'bg-[#e0e0e0]' : ''}>
+                            <Link href='/admission-process' className={`capitalize hover:font-extrabold ${pathname === '/admission-process' ? 'font-bold' : ''}`}>
+                                admission
+                            </Link>
+                        </li>
+                        <li className={pathname === '/blog' ? 'bg-[#e0e0e0]' : ''}>
+                            <Link href='/blog' className={`capitalize hover:font-extrabold ${pathname === '/blog' ? 'font-bold' : ''}`}>
+                                news/blog
+                            </Link>
+                        </li>
+                        <li className={pathname === '/contact' ? 'bg-[#e0e0e0]' : ''}>
+                            <Link href='/contact' className={`capitalize hover:font-extrabold ${pathname === '/contact' ? 'font-bold' : ''}`}>
+                                contact
+                            </Link>
+                        </li>
+
                     </ul>
                 </div>
 
@@ -66,7 +96,7 @@ function Navbar() {
                     </div>
                     <div className="drawer-side">
                         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                        <ul className="menu p-4 w-80 min-h-full bg-gray-700 text-white max-w-[300px]">
+                        <ul className="menu p-4 w-80 min-h-full bg-primary text-white max-w-[320px]">
                             <li><Link href='/' className="side-link">Home</Link></li>
                             <li>
                                 <details className="group">

@@ -66,7 +66,7 @@ const FoundersNote = () => {
                                 With warm regards,
                             </p>
                             <p className="text-sm font-semibold lg:text-[15px]">
-                                Mr & Mrs. Ezenwaka
+                                Mrs. Stella Ezenwaka
                                 <br />
                                 Founders, St. Michael the Archangel Academy Makurdi.
                             </p>

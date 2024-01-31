@@ -7,6 +7,7 @@ import { featuredPosts } from '@/data/blogData';
 import { Post } from '@/types/interface';
 import Link from "next/link";
 import BlogCard from "./BlogCard";
+import { newsReader } from "@/utils/fonts";
 
 type Props = {};
 
@@ -16,7 +17,7 @@ const BlogSection = (props: Props) => {
 
   return (
     <section className={styles.container}>
-      <h2 className={styles.headerText}>Featured News</h2>
+      <h2 className={`${styles.headerText} ${newsReader.className}`}>Featured News</h2>
 
       <div className={styles.cardWrapper}>
         {topPosts.map((post: Post) => (

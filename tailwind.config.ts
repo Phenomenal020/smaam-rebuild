@@ -24,6 +24,10 @@ const config: Config = {
         'xl': '1280px',
         '2xl': '1536px',
       },
+      colors: {
+        primary: '#213464',
+        primaryLight: '#407BB2',
+      },
     },
   },
   plugins: [require("daisyui")],

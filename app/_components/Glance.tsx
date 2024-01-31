@@ -5,6 +5,7 @@ import { FiHome } from "react-icons/fi";
 import React, { useState, useEffect } from 'react';
 
 import { Glance } from '@/types/interface';
+import { newsReader } from "@/utils/fonts";
 
 export default function Glance() {
   const [glance, setGlance] = useState<Glance>({
@@ -13,62 +14,62 @@ export default function Glance() {
     classrooms: 0,
     parents: 0,
     passRate: 0,
-});
+  });
 
-useEffect(() => {
+  useEffect(() => {
     const campusesTimer = setInterval(() => {
-        if (glance.campuses < 2) {
-            setGlance((prevGlance:Glance) => ({
-                ...prevGlance,
-                campuses: prevGlance.campuses + 0.02,
-            }));
-        }
+      if (glance.campuses < 2) {
+        setGlance((prevGlance: Glance) => ({
+          ...prevGlance,
+          campuses: prevGlance.campuses + 0.02,
+        }));
+      }
     }, 40);
 
     const foundingYearTimer = setInterval(() => {
-        if (glance.foundingYear < 2017) {
-            setGlance((prevGlance:Glance) => ({
-                ...prevGlance,
-                foundingYear: prevGlance.foundingYear + 20.17,
-            }));
-        }
-    }, 40); 
+      if (glance.foundingYear < 2017) {
+        setGlance((prevGlance: Glance) => ({
+          ...prevGlance,
+          foundingYear: prevGlance.foundingYear + 20.17,
+        }));
+      }
+    }, 40);
 
     const classroomsTimer = setInterval(() => {
-        if (glance.classrooms < 40) {
-            setGlance((prevGlance:Glance) => ({
-                ...prevGlance,
-                classrooms: prevGlance.classrooms + 0.4,
-            }));
-        }
-    }, 40); 
+      if (glance.classrooms < 40) {
+        setGlance((prevGlance: Glance) => ({
+          ...prevGlance,
+          classrooms: prevGlance.classrooms + 0.4,
+        }));
+      }
+    }, 40);
 
     const parentsTimer = setInterval(() => {
-        if (glance.parents < 100) {
-            setGlance((prevGlance:Glance) => ({
-                ...prevGlance,
-                parents: prevGlance.parents + 1,
-            }));
-        }
+      if (glance.parents < 100) {
+        setGlance((prevGlance: Glance) => ({
+          ...prevGlance,
+          parents: prevGlance.parents + 1,
+        }));
+      }
     }, 40);
 
     const passRateTimer = setInterval(() => {
-        if (glance.passRate < 100) {
-            setGlance((prevGlance:Glance) => ({
-                ...prevGlance,
-                passRate: prevGlance.passRate + 10,
-            }));
-        }
-    }, 40); 
+      if (glance.passRate < 100) {
+        setGlance((prevGlance: Glance) => ({
+          ...prevGlance,
+          passRate: prevGlance.passRate + 10,
+        }));
+      }
+    }, 40);
 
     return () => {
-        clearInterval(campusesTimer);
-        clearInterval(foundingYearTimer);
-        clearInterval(classroomsTimer);
-        clearInterval(parentsTimer);
-        clearInterval(passRateTimer);
+      clearInterval(campusesTimer);
+      clearInterval(foundingYearTimer);
+      clearInterval(classroomsTimer);
+      clearInterval(parentsTimer);
+      clearInterval(passRateTimer);
     };
-}, [glance]);
+  }, [glance]);
   return (
     <section
       className={styles.container}
@@ -79,7 +80,7 @@ useEffect(() => {
     >
       <div className={styles.backgroundImg}></div>
 
-      <h4 className={styles.header}>At a glance</h4>
+      <h4 className={`${styles.header} ${newsReader.className}`}>At a glance</h4>
 
       <div className={styles.row}>
         <p className={styles.para}>

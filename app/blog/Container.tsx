@@ -22,8 +22,8 @@ const FeaturedNewsSection = () => {
                         ))}
                     </div>
                     <div className="text-center mt-8">
-                        <Link href="/blog" className="btn btn-primary btn-wide">
-                            See All Activities <BsArrowRight className="ml-2" />
+                        <Link href="/blog" className="btn link-btn flex">
+                            See All Activities &rarr;
                         </Link>
                     </div>
                 </div>

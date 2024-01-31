@@ -1,16 +1,28 @@
 .card {
   height: fit-content;
-  margin: .5em 0em;
-  background-color: #fff;
-  border-top-left-radius: .5em;
-  border-top-right-radius: .5em;
+  margin: 0.5em 0em;
+  background-color: #F2F2F2;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
   cursor: pointer;
-  transition: all 0.05s ease;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card:hover {
-  box-shadow: 0 .25em .5em rgba(0, 0, 0, 0.2);
-  transform: scale(1.01);
+  transform: scale(1.01) translateY(-5px);
 }
 
 .imageWrapper {

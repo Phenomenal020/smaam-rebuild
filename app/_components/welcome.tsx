@@ -1,10 +1,11 @@
+import { newsReader } from '@/utils/fonts';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const About = () => {
     return (
         <section className="bg-gray-50 text-gray-700 p-4 md:p-8 max-width min-w-[360px]" id='welcomeSection'>
-            <h4 className="text-2xl md:text-3xl font-bold text-center mb-6">
+            <h4 className={`${newsReader.className} text-2xl md:text-3xl font-bold text-center mb-6`}>
                 Welcome to St. Michael the Archangel Academy, Makurdi.
             </h4>
 

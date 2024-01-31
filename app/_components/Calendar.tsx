@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { CalendarInfo } from '@/data/calendarData';
+import { newsReader } from '@/utils/fonts';
 
 const Calendar = () => {
   const [index, setIndex] = useState(0);
@@ -26,7 +27,7 @@ const Calendar = () => {
 
   return (
     <section className='bg-gray-100 p-6 max-w-full min-w-[360px] max-width'>
-      <h4 className="text-xl font-bold text-center mb-3">
+      <h4 className={`${newsReader.className} text-xl font-bold text-center mb-3 uppercase`}>
         Calendar
       </h4>
 
