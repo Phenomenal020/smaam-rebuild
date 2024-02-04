@@ -16,18 +16,18 @@ const ContactSection = () => {
                             <p className="mb-2">We are happy to hear from you.</p>
                             <div className="mb-4">
                                 <AiOutlineHome className="inline-block  text-blue-600 text-xl" />
-                                <span className="align-middle ml-2 font-bold text-sm md:text-[15px]">Address</span>
-                                <p className="mt-1 text-sm md:text-[15px]">No.4 Aliade Street Highlevel, Makurdi Benue State, Nigeria. Opposite Bishop Murray medical centre Highlevel Makurdi.</p>
+                                <span className="align-middle ml-2 font-bold text-sm md:text-base">Address</span>
+                                <p className="mt-1 text-sm md:text-base">No.4 Aliade Street Highlevel, Makurdi Benue State, Nigeria. Opposite Bishop Murray medical centre Highlevel Makurdi.</p>
                             </div>
                             <div className="mb-4">
                                 <AiOutlineMail className="inline-block text-blue-600 text-2xl" />
-                                <span className="align-middle ml-2 font-bold text-sm md:text-[15px]">Email</span>
-                                <p className="mt-1 break-words text-sm md:text-[15px]">St.michaelthearchangelacademymakurdi2@gmail.com</p>
+                                <span className="align-middle ml-2 font-bold text-sm md:text-base">Email</span>
+                                <p className="mt-1 break-words text-sm md:text-base">St.michaelthearchangelacademymakurdi2@gmail.com</p>
                             </div>
                             <div className="mb-4">
                                 <AiOutlinePhone className="inline-block text-blue-600 text-2xl" />
-                                <span className="align-middle ml-2 font-bold text-sm md:text-[15px]">Phone Number</span>
-                                <p className="mt-1 text-sm md:text-[15px]">+234 (0) 806 9371 264, +234 (0) 704 4362 422</p>
+                                <span className="align-middle ml-2 font-bold text-sm md:text-base">Phone Number</span>
+                                <p className="mt-1 text-sm md:text-base">+234 (0) 806 9371 264, +234 (0) 704 4362 422</p>
                             </div>
                             <div>
                                 <iframe
@@ -83,7 +83,7 @@ const ContactSection = () => {
                                         placeholder="Your Enquiry"
                                         className="form-textarea px-4 py-2 rounded"
                                     ></textarea>
-                                    <button type="submit" className="btn bg-white text-blue-800 font-bold py-2 rounded hover:bg-gray-100">
+                                    <button type="submit" className="btn bg-white text-blue-800 font-bold py-2 rounded hover:bg-blue-800 hover:text-white hover:border-0 text-base">
                                         Submit Enquiry
                                     </button>
                                 </form>

@@ -26,14 +26,14 @@ const Calendar = () => {
   };
 
   return (
-    <section className='bg-gray-100 p-6 max-w-full min-w-[360px] max-width'>
-      <h4 className={`${newsReader.className} text-xl font-bold text-center mb-3 uppercase`}>
+    <section className='bg-gray-100 p-8 max-width min-width pb-12'>
+      <h4 className={`${newsReader.className} text-2xl font-bold text-center my-6 uppercase`}>
         Calendar
       </h4>
 
       <div className="flex justify-center items-center max-w-[400px] md:max-w-none md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
-          <div className="p-6 flex flex-col md:w-[60%]">
+          <div className="p-6 flex flex-col md:w-[60%] min-h-[200px]">
             <h2 className="text-2xl font-bold text-gray-700 mb-3 capitalize">{CalendarInfo[index].header}</h2>
             <p className="text-gray-600" style={{ transition: 'opacity 0.3s', opacity: fade ? 1 : 0 }}>
               {CalendarInfo[index].comment}
@@ -47,8 +47,8 @@ const Calendar = () => {
             </div>
             <div className="my-4 flex-col justify-center" style={{ transition: 'opacity 0.3s', opacity: fade ? 1 : 0 }}>
               <p className="text-4xl font-bold text-center mb-3">{CalendarInfo[index].day}</p>
-              <p className="uppercase text-center text-2xl mb-2">{CalendarInfo[index].month}</p>
-              <p className="text-xl text-center">{CalendarInfo[index].year}</p>
+              <p className="uppercase text-center text-2xl mb-2 font-semibold">{CalendarInfo[index].month}</p>
+              <p className="text-xl text-center font-semibold">{CalendarInfo[index].year}</p>
             </div>
           </div>
         </div>

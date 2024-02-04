@@ -1,11 +1,12 @@
 .container {
-  padding: 1em;
+  padding: 2em;
   width: 100%;
   height: max-content;
   background: #1b3167e5;
   max-width: 1400px;
   min-width: 360px;
   margin: 0 auto;
+  min-height: 500px;
 }
 
 .wrapper {
@@ -27,9 +28,10 @@
 }
 
 .quoteBox {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 1em auto;
   position: relative;
+  line-height: 24px;
 }
 
 .quotesPara {
@@ -38,14 +40,14 @@
 }
 
 .quoteAuthor {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: .33em;
 }
 
 .quoteRole {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.25;
 }
 

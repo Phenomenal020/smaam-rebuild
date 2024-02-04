@@ -15,6 +15,10 @@ const config: Config = {
       },
       backgroundColor: {
         'top': '#213464',
+        "primary-dark": '#0D072C',
+        "primary": '#1b3167e5',
+        "primary-light": '#278CE7',
+        'secondary-light': '#F2F2F2',
       },
       screens: {
         'xs': '480px',
@@ -25,8 +29,9 @@ const config: Config = {
         '2xl': '1536px',
       },
       colors: {
-        primary: '#213464',
-        primaryLight: '#407BB2',
+        bgPrimaryDark: '#0D072C',
+        bgPrimary: '#1b3167e5',
+        bgPrimaryLight: '#278CE7',
       },
     },
   },

@@ -5,18 +5,18 @@ import { newsReader } from "@/utils/fonts";
 
 const Mission = () => {
     return (
-        <section className="bg-gray-100 py-10 max-width min-w-[360px]">
+        <section className=" py-10 max-width min-width">
             <div className="container mx-auto px-4">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div className="bg-primaryLight text-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="bg-primary-light text-white p-6 rounded-lg shadow-xl flex flex-col items-center">
                         <Image src='/images/ourVision.png' width={70} height={70} alt="vision icon" />
                         <h4 className={`${newsReader.className} text-xl font-semibold mt-4 capitalize`}>Our Vision</h4>
                         <p className="text-center mt-2 text-sm md:text-[15px] leading-6">
                             To create a nurturing school community where children excel in their achievements and are inspired to continue learning in the future.
                         </p>
                     </div>
-                    <div className="bg-primaryLight text-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="bg-primary-light text-white p-6 rounded-lg shadow-xl flex flex-col items-center">
                         <Image src='/images/ourMission.png' width={70} height={70} alt="mission icon" />
                         <h4 className={`${newsReader.className} text-xl font-semibold mt-4 capitalize`}>Our mission</h4>
                         <p className="text-center mt-2  text-sm md:text-[15px] leading-6">
@@ -24,7 +24,7 @@ const Mission = () => {
                             sound.
                         </p>
                     </div>
-                    <div className="bg-primaryLight text-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="bg-primary-light text-white p-6 rounded-lg shadow-xl flex flex-col items-center">
                         <Image src='/images/ourGoals.png' width={70} height={70} alt="goals icon" />
                         <h4 className={`${newsReader.className} text-xl font-semibold mt-4 capitalize`}>Our goals</h4>
                         <p className="text-center mt-2  text-sm md:text-[15px] leading-6">
@@ -33,7 +33,7 @@ const Mission = () => {
                             skills, be compassionate and be creative.
                         </p>
                     </div>
-                    <div className="bg-primaryLight text-white p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div className="bg-primary-light text-white p-6 rounded-lg shadow-xl flex flex-col items-center">
                         <Image src='/images/ourCoreValues.png' width={70} height={70} alt="goals icon" />
                         <h4 className={`${newsReader.className} text-xl font-semibold mt-4 capitalize`}>our core values</h4>
                         <p className="text-center mt-2  text-sm md:text-[15px] leading-6">

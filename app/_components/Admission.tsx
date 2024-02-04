@@ -1,4 +1,3 @@
-// import { ButtonBig } from "@/shared-components/Button";
 import Link from "next/link";
 import styles from "./admission.module.css";
 import { newsReader } from "@/utils/fonts";

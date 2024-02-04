@@ -68,18 +68,14 @@ const Testimonials = (props: Props) => {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        navigation={{
-          prevEl: `${styles.customPrevBtn}`,
-          nextEl: `${styles.customNextBtn}`,
-        }}
-        modules={[Pagination, Navigation, Autoplay]}
+        modules={[  Autoplay]}
         className={styles.container}
       >
         {testimonials.map((testimonial: testimonial) => {
@@ -89,7 +85,7 @@ const Testimonials = (props: Props) => {
                 <div className={styles.topDiv}>
                   <FaQuoteLeft
                     className={styles.quoteIconLeft}
-                    size={36}
+                    size={48}
                     color="#fff"
                   />
                   <div className={styles.quoteBox}>

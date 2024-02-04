@@ -1,8 +1,6 @@
 .container {
-  background-color: #1d1d1d;
-  padding: 1em;
-  width: 100vw;
-  max-width: 100vw;
+  background-color: #1F2937;
+  padding: 4em;
   max-width: 1400px;
   min-width: 360px;
   margin: 0 auto;
@@ -22,7 +20,7 @@
 }
 
 .contactInfo {
-  color: #fff;
+  color: #ddd;
   font-size: 0.8rem;
   line-height: 1.25;
   width: 100%;
@@ -33,6 +31,8 @@
 .phone,
 .email {
   margin: 0.33em 0px;
+  font-size: 1rem;
+  line-height: 1.25;
 }
 
 .siteNavWrapper {
@@ -51,9 +51,10 @@
 .getInTouch,
 .linkHeader {
   text-transform: uppercase;
-  font-size: 0.9rem;
-  color: #fff;
-  line-height: 1.33;
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.8;
+  font-weight: 800;
 }
 
 .linkHeader {
@@ -79,6 +80,8 @@
   padding-bottom: 0.5em;
   margin-bottom: 2em;
   text-align: center;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .devWrapper {
@@ -110,8 +113,6 @@
 
   .info {
     align-self: flex-start;
-    padding-left: 0.75em;
-    border-left: 1px solid #ddd;
     margin-bottom: 0.2em;
   }
 

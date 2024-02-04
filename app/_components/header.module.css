@@ -6,8 +6,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1400px;
-  min-width: 360px;
   margin: 0 auto;
   z-index: 2;
 }

@@ -2,11 +2,10 @@
   height: fit-content;
   margin: 0.5em 0em;
   background-color: #F2F2F2;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
   cursor: pointer;
   transition: all 0.3s ease;
   animation: fadeIn 0.5s ease-out;
+  border-radius: 1rem;
 }
 
 @keyframes fadeIn {
@@ -30,10 +29,14 @@
   aspect-ratio: 4/3;
   position: relative;
   max-height: 300px;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+ 
 }
 
 .image {
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 .bodyWrapper {
@@ -45,25 +48,25 @@
 }
 
 .date {
-  font-size: .75rem;
+  font-size: .9rem;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
 }
 
 .categoryText {
-  font-size: 14px;
+  font-size: 1rem;
   margin: 6px 0px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: capitalize;
   color: #242540;
   text-decoration: underline;
 }
 
 .categorySampleText {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   display: -webkit-box;
   /* text-align: justify; */
   -webkit-line-clamp: 2;
@@ -74,7 +77,7 @@
 
 .more {
   /* text-decoration: none; */
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   color: blue;
   font-weight: 600;
