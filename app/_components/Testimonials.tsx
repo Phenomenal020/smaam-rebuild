@@ -64,74 +64,77 @@ const Testimonials = (props: Props) => {
 
   return (
     <>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[  Autoplay]}
-        className={styles.container}
-      >
-        {testimonials.map((testimonial: testimonial) => {
-          return (
-            <SwiperSlide key={Math.random() * 1000000}>
-              <div className={styles.wrapper}>
-                <div className={styles.topDiv}>
-                  <FaQuoteLeft
-                    className={styles.quoteIconLeft}
-                    size={48}
-                    color="#fff"
-                  />
-                  <div className={styles.quoteBox}>
-                    <p className={styles.quotesPara}>{testimonial.comment}</p>
+      <section className={styles.container}>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          // pagination={{
+          //   clickable: true,
+          // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className={styles.wrapper}
+        >
+          {testimonials.map((testimonial: testimonial) => {
+            return (
+              <SwiperSlide key={Math.random() * 1000000}>
+                <div className={styles.wrapper}>
+                  <div className={styles.topDiv}>
+                    <FaQuoteLeft
+                      className={styles.quoteIconLeft}
+                      size={48}
+                      color="#fff"
+                    />
+                    <div className={styles.quoteBox}>
+                      <p className={styles.quotesPara}>{testimonial.comment}</p>
+                    </div>
+                    <p className={styles.quoteAuthor}>{testimonial.name}</p>
+                    <p className={styles.quoteRole}>{testimonial.role}</p>
                   </div>
-                  <p className={styles.quoteAuthor}>{testimonial.name}</p>
-                  <p className={styles.quoteRole}>{testimonial.role}</p>
-                </div>
 
-                <div className={styles.commentWrapper}>
-                  <div className={styles.left}>
-                    <div className={styles.imgWrapper}>
-                      <Image
-                        src={testimonial.left}
-                        alt="recommendation"
-                        fill={true}
-                        className={styles.image}
-                      />
+                  <div className={styles.commentWrapper}>
+                    <div className={styles.left}>
+                      <div className={styles.imgWrapper}>
+                        <Image
+                          src={testimonial.left}
+                          alt="recommendation"
+                          fill={true}
+                          className={styles.image}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className={styles.mid}>
-                    <div className={styles.midImgWrapper}>
-                      <Image
-                        src={testimonial.main}
-                        alt="recommendation"
-                        fill={true}
-                        className={styles.image}
-                      />
+                    <div className={styles.mid}>
+                      <div className={styles.midImgWrapper}>
+                        <Image
+                          src={testimonial.main}
+                          alt="recommendation"
+                          fill={true}
+                          className={styles.image}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className={styles.right}>
-                    <div className={styles.imgWrapper}>
-                      <Image
-                        src={testimonial.right}
-                        alt="recommendation"
-                        fill={true}
-                        className={styles.image}
-                      />
+                    <div className={styles.right}>
+                      <div className={styles.imgWrapper}>
+                        <Image
+                          src={testimonial.right}
+                          alt="recommendation"
+                          fill={true}
+                          className={styles.image}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </section>
+
     </>
   );
 };

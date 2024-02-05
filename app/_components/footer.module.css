@@ -1,6 +1,6 @@
 .container {
   background-color: #1F2937;
-  padding: 4em;
+  padding: 1em;
   max-width: 1400px;
   min-width: 360px;
   margin: 0 auto;
@@ -98,7 +98,7 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    padding: 1.5;
+    padding: 1em;
   }
 }
 

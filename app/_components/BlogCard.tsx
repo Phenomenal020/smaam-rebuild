@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./blogcard.module.css";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import Link from "next/link";
 
 import { Post } from '@/types/interface'; 
 

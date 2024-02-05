@@ -2,6 +2,10 @@
   position: relative;
   height: 45vh;
   width: 100%;
+}
+
+.wrapper {
+  width: 100%;
   max-width: 1400px;
   min-width: 360px;
   margin: 0 auto;
@@ -83,5 +87,13 @@
   .card {
     width: 50%;
     max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    width: 50%;
+    max-width: 500px;
+    left: 15%;
   }
 }

@@ -78,41 +78,45 @@ export default function Glance() {
         backgroundSize: "cover",
       }}
     >
+
       <div className={styles.backgroundImg}></div>
+      <div className={styles.wrapper}>
 
-      <h4 className={`${styles.header} ${newsReader.className}`}>At a glance</h4>
+        <h4 className={`${styles.header} ${newsReader.className}`}>At a glance</h4>
 
-      <div className={styles.row}>
-        <p className={styles.para}>
-          <span className={styles.iconHeader}>
-            <FiHome size={48} color="#fff" />
-          </span>
-          <span className={styles.textBody}>
-            No.4 Aliade street High level Makurdi.
-          </span>
-        </p>
-        <p className={styles.para}>
-          <span className={styles.iconHeader}>{Math.floor(glance.campuses)}</span>
-          <span className={styles.textBody}>Campuses</span>
-        </p>
-        <p className={styles.para}>
-          <span className={styles.iconHeader}>{Math.floor(glance.foundingYear)}</span>
-          <span className={styles.textBody}>founding year</span>
-        </p>
+        <div className={styles.row}>
+          <p className={styles.para}>
+            <span className={styles.iconHeader}>
+              <FiHome size={48} color="#fff" />
+            </span>
+            <span className={styles.textBody}>
+              No.4 Aliade street High level Makurdi.
+            </span>
+          </p>
+          <p className={styles.para}>
+            <span className={styles.iconHeader}>{Math.floor(glance.campuses)}</span>
+            <span className={styles.textBody}>Campuses</span>
+          </p>
+          <p className={styles.para}>
+            <span className={styles.iconHeader}>{Math.floor(glance.foundingYear)}</span>
+            <span className={styles.textBody}>founding year</span>
+          </p>
 
-        <p className={styles.para}>
-          <span className={styles.iconHeader}>{Math.floor(glance.classrooms)}</span>
-          <span className={styles.textBody}>classrooms</span>
-        </p>
-        <p className={styles.para}>
-          <span className={styles.iconHeader}>{Math.floor(glance.parents)}%</span>
-          <span className={styles.textBody}>satisfied parents</span>
-        </p>
-        <p className={styles.para}>
-          <span className={styles.iconHeader}>{Math.floor(glance.passRate)}%</span>
-          <span className={styles.textBody}>pass rate</span>
-        </p>
+          <p className={styles.para}>
+            <span className={styles.iconHeader}>{Math.floor(glance.classrooms)}</span>
+            <span className={styles.textBody}>classrooms</span>
+          </p>
+          <p className={styles.para}>
+            <span className={styles.iconHeader}>{Math.floor(glance.parents)}%</span>
+            <span className={styles.textBody}>satisfied parents</span>
+          </p>
+          <p className={styles.para}>
+            <span className={styles.iconHeader}>{Math.floor(glance.passRate)}%</span>
+            <span className={styles.textBody}>pass rate</span>
+          </p>
+        </div>
       </div>
+
     </section>
   );
 }

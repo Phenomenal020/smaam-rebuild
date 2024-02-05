@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="w-full bg-[#1F2937] py-12">
+    <section className="w-full bg-[#1F2937] py-8">
       <footer className={styles.container}>
         {/* social media wrapper */}
         <div className={styles.top}>

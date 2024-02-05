@@ -17,20 +17,23 @@ const BlogSection = (props: Props) => {
 
   return (
     <section className={styles.container}>
-      <h2 className={`${styles.headerText} ${newsReader.className}`}>Featured News</h2>
+      <div className={styles.wrapper}>
+        <h2 className={`${styles.headerText} ${newsReader.className}`}>Featured News</h2>
 
-      <div className={styles.cardWrapper}>
-        {topPosts.map((post: Post) => (
-          <Link href={`/${post.page}`} key={post.id}>
+        <div className={styles.cardWrapper}>
+          {topPosts.map((post: Post) => (
+            <Link href={`/${post.page}`} key={post.id}>
               <BlogCard post={post} />
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
+
+
+        <button className={styles.visitBlogBtn}>
+          <Link href="/blog">see all activities &rarr;</Link>
+        </button>
       </div>
 
-
-      <button className={styles.visitBlogBtn}>
-        <Link href="/blog">see all activities &rarr;</Link>
-      </button>
     </section>
   );
 };
