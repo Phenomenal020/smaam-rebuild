@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const About = () => {
     return (
-        <section className=" text-gray-700 p-4 w-full" id='welcomeSection'>
+        <section className=" text-gray-700 p-4 w-full" id='welcome'>
             <section className=" text-gray-700 p-4 max-width min-width" id='welcomeSection'>
 
 

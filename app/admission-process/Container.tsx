@@ -6,7 +6,7 @@ const AdmissionProcess = () => {
     return (
         <>
             <Header text="Admission Process" />
-            <section className='w-full bg-gray-100 p-4'>
+            <section className='w-full bg-gray-100 p-4' id='admission-process-page'>
                 <div className="bg-gray-100 py-10 max-width min-width">
                     <div className="px-4 md:px-8">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

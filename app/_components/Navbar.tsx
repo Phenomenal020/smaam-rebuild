@@ -13,7 +13,7 @@ function Navbar() {
     const pathname = usePathname()
 
     return (
-        <nav className="sticky top-0 z-50 txt-white shadow-sm">
+        <nav className="sticky top-0 z-50 txt-white shadow-sm" id="navbar">
 
             <div className="bg-base-100 flex flex-col">
 

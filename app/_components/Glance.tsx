@@ -77,6 +77,7 @@ export default function Glance() {
         background: `url(${"/images/admission-process.png"})`,
         backgroundSize: "cover",
       }}
+      id="glance"
     >
 
       <div className={styles.backgroundImg}></div>

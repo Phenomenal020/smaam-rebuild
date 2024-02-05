@@ -7,7 +7,7 @@ const ContactSection = () => {
     return (
         <>
             <Header text="Contact us" />
-            <section className='w-full bg-gray-100 p-4'>
+            <section className='w-full bg-gray-100 p-4' id='contact-page'>
                 <div className="bg-gray-100 text-gray-800 md:p-12 max-width min-w-[360px]">
                     <div className="mx-auto">
                         <div className="flex flex-col md:flex-row gap-8">

@@ -26,7 +26,7 @@ const Calendar = () => {
   };
 
   return (
-    <section className='w-full bg-gray-100'>
+    <section className='w-full bg-gray-100' id='calendar'>
       <div className='p-4 max-width min-width pb-12'>
         <h4 className={`${newsReader.className} text-2xl font-bold text-center my-6 uppercase`}>
           Calendar

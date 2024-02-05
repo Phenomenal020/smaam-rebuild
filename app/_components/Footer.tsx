@@ -7,11 +7,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="w-full bg-[#1F2937] py-8">
+    <section className="w-full bg-[#1F2937] py-8" id="footer">
       <footer className={styles.container}>
         {/* social media wrapper */}
         <div className={styles.top}>
-          <Link
+          {/* <Link
             href="https://www.facebook.com/profile.php?id=100075831671661"
             target="_blank"
           >
@@ -20,7 +20,7 @@ export default function Footer() {
               color="#fff"
               style={{ cursor: "pointer", marginRight: ".5em" }}
             />
-          </Link>
+          </Link> */}
 
           <Link
             href="https://www.facebook.com/profile.php?id=100075831671661"
@@ -33,7 +33,7 @@ export default function Footer() {
             />
           </Link>
 
-          <Link
+          {/* <Link
             href="https://wa.me/message/VPY42GHRUKNZC1"
             target="_blank"
           >
@@ -42,7 +42,7 @@ export default function Footer() {
               color="#fff"
               style={{ cursor: "pointer", marginRight: ".5em" }}
             />
-          </Link>
+          </Link> */}
 
           <Link
             href="https://wa.me/message/VPY42GHRUKNZC1"
@@ -83,7 +83,7 @@ export default function Footer() {
 
             <div className={styles.info}>
               <p className={styles.linkHeader}>
-                <Link href="/about">the school</Link>
+                <Link href="/the-school">the school</Link>
               </p>
               <p className={styles.linkHeader}>
                 <Link href="/welcome">founder&apos;s note</Link>
@@ -113,8 +113,8 @@ export default function Footer() {
                 <Link href="/admission-process">admissions</Link>
               </p>
               <p className={styles.linkHeader}>
-              glance
-            </p>
+                <Link href="/#glance">at a glance</Link>
+              </p>
             </div>
           </div>
         </div>

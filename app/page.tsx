@@ -1,21 +1,44 @@
-import Admission from "./_components/Admission";
-import Banner from './_components/Banner';
-import BlogSection from "./_components/Blog";
-import Calendar from "./_components/Calendar";
-import Glance from "./_components/Glance";
-import Testimonials from "./_components/Testimonials";
-import About from "./_components/welcome";
+'use client'
 
-export default function Home() {
+import { motion } from 'framer-motion';
+import Container from './container';
+
+function Page() {
+  const pageVariants = {
+    initial: {
+      y: '-100vh',
+      opacity: 0
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: { type: 'spring', stiffness: 50, damping: 20 }
+    },
+    exit: {
+      y: '100vh',
+      opacity: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
+  const pageTransition = {
+    type: "spring",
+    stiffness: 150,
+    damping: 10,
+    duration: 0.5
+  };
+
   return (
-    <main>
-      <Banner />
-      <About />
-      <Glance />
-      <Admission />
-      <BlogSection />
-      <Calendar />
-      <Testimonials />
-    </main>
+    <motion.section
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Container />
+    </motion.section>
   );
 }
+
+export default Page;

@@ -16,7 +16,7 @@ const BlogSection = (props: Props) => {
   const topPosts: Post[] = featuredPosts.slice(0, 3);
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='featured'>
       <div className={styles.wrapper}>
         <h2 className={`${styles.headerText} ${newsReader.className}`}>Featured News</h2>
 

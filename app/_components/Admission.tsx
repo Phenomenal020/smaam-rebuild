@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Admission({ }: Props) {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='admission'>
        <div className={styles.background}></div>
       <div className={styles.wrapper}>
         <div className={styles.card}>

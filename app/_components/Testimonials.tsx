@@ -64,7 +64,7 @@ const Testimonials = (props: Props) => {
 
   return (
     <>
-      <section className={styles.container}>
+      <section className={styles.container} id="testimonial">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}

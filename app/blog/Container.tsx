@@ -12,7 +12,7 @@ const FeaturedNewsSection = () => {
     return (
         <>
             <Header text='our blog' />
-            <section className='w-full bg-gray-100'>
+            <section className='w-full bg-gray-100' id='blog-list-page'>
                 <div className="bg-gray-100 py-10 max-width min-width">
                     <div className="mx-auto px-4">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">

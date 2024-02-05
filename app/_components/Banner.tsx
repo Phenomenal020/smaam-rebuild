@@ -21,7 +21,7 @@ function Banner({ }: Props) {
 
 
     return (
-        <section className="bg-base-200 w-full flex items-center justify-center">
+        <section className="bg-base-200 w-full flex items-center justify-center" id='banner'>
 
 
             <div className="flex-col lg:flex lg:flex-row-reverse gap-8 max-width min-width aspect-video lg:items-center p-4">
