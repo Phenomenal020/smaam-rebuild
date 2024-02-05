@@ -11,7 +11,7 @@ export default function Footer() {
       <footer className={styles.container}>
         {/* social media wrapper */}
         <div className={styles.top}>
-          {/* <Link
+          <Link
             href="https://www.facebook.com/profile.php?id=100075831671661"
             target="_blank"
           >
@@ -20,7 +20,7 @@ export default function Footer() {
               color="#fff"
               style={{ cursor: "pointer", marginRight: ".5em" }}
             />
-          </Link> */}
+          </Link>
 
           <Link
             href="https://www.facebook.com/profile.php?id=100075831671661"
@@ -33,7 +33,7 @@ export default function Footer() {
             />
           </Link>
 
-          {/* <Link
+          <Link
             href="https://wa.me/message/VPY42GHRUKNZC1"
             target="_blank"
           >
@@ -42,7 +42,7 @@ export default function Footer() {
               color="#fff"
               style={{ cursor: "pointer", marginRight: ".5em" }}
             />
-          </Link> */}
+          </Link>
 
           <Link
             href="https://wa.me/message/VPY42GHRUKNZC1"

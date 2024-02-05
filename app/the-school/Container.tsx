@@ -62,7 +62,7 @@ const AboutAndAnthem = () => {
                     <div>
                         <h4 className={`${newsReader.className} text-xl font-bold border-b-2 border-gray-200 mb-4`}>About The School</h4>
                         <p className="mb-4 text-justify text-sm md:text-[15px] leading-6">
-                            St. Michael the Archangel Academy Makurdi, a beacon of educational excellence, has a remarkable history that began on September 10, 2018. Founded by Mrs.Stella Ezenwaka, the school opened its doors with a population of 141 eager pupils, housed in 10 classrooms, and supported by a dedicated team of fourteen staff members.
+                            St. Michael the Archangel Academy Makurdi, a beacon of educational excellence, has a remarkable history that began on September 10, 2018. Founded by Mrs. Stella Ezenwaka, the school opened its doors with a population of 141 eager pupils, housed in 10 classrooms, and supported by a dedicated team of fourteen staff members.
                         </p>
                         <p className="mb-4 text-justify text-sm md:text-[15px] leading-6">
                             One of the school&apos;s earliest symbols of unity and pride was its
@@ -155,7 +155,7 @@ const AboutAndAnthem = () => {
                             <br />
                             So we may be rewarded
                             <br />
-                            With a Crown of Excellence.
+                            With a Crown of Excellence.
                         </p>
                     </div>
                 </div>

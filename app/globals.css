@@ -4,11 +4,11 @@
 
 /* Your custom CSS file */
 .max-width {
-    @apply max-w-[1400px] mx-auto;
+    @apply max-w-[1280px] mx-auto;
 }
 
 .min-width {
-    @apply min-w-[360px];
+    @apply min-w-[320px];
 }
 
 .nav-link {

@@ -47,9 +47,9 @@ const Testimonials = (props: Props) => {
       left: "/images/testimonial-002.jpg",
       main: "/images/testimonial-003.jpg",
       right: "/images/testimonial-004.jpg",
-      comment: "SMAAM offers you so many opportunities growth. Workshops/Seminars by Certified teachers are organised at the beginning of every Session. Incentives are given to both staff and students at intervals as a form of encouragement. Overall, it is a fun place to work in",
-      role: "Parent",
-      name: "Joy Amadi",
+      comment: "SMAAM offers you so many opportunities for growth. Workshops/Seminars by Certified teachers are organised at the beginning of every Session. Incentives are given to both staff and students at intervals as a form of encouragement. Overall, it is a fun place to work in",
+      role: "Teacher",
+      name: "Mrs. Mokwe Jeraldine",
     },
     {
       left: "/images/testimonial-003.jpg",

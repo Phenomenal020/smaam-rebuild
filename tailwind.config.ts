@@ -21,9 +21,9 @@ const config: Config = {
         'secondary-light': '#F2F2F2',
       },
       screens: {
-        'xs': '480px',
+        'xs': '400px',
         'sm': '640px',
-        'md': '800px',
+        'md': '768px',
         'lg': '992px',
         'xl': '1280px',
         '2xl': '1536px',

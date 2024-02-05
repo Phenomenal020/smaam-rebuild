@@ -3,39 +3,38 @@
 import { motion } from 'framer-motion';
 import FoundersNote from './Welcome';
 
-function Page() {
-  const pageVariants = {
-    initial: {
-      y: '-100vh',
-      opacity: 0
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: { type: 'spring', stiffness: 50, damping: 20 }
-    },
-    exit: {
-      y: '100vh',
-      opacity: 0,
-      transition: { duration: .5 }
-    }
-  };
+type Props = {};
 
-  const pageTransition = {
-    type: "spring",
-    stiffness: 150,
-    damping: 10,
-    duration: 0.5
-  };
+function Page({ }: Props) {
+  // const pageVariants = {
+  //   initial: {
+  //     opacity: 0,
+  //     scale: 0,
+  //   },
+  //   animate: {
+  //     opacity: 1,
+  //     scale: 1,
+  //   },
+  //   exit: {
+  //     opacity: 0,
+  //     scale: 1.2,
+  //   }
+  // };
+
+  // const pageTransition = {
+  //   type: "tween",
+  //   duration: .4
+  // };
+
   return (
-    <motion.section
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      variants={pageVariants}
-      transition={pageTransition}>
+    // <motion.section
+    //   initial="initial"
+    //   animate="animate"
+    //   exit="exit"
+    //   variants={pageVariants}
+    //   transition={pageTransition}>
       <FoundersNote />
-    </motion.section>
+    // </motion.section>
   );
 }
 

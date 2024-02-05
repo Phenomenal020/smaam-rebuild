@@ -21,12 +21,12 @@ function Banner({ }: Props) {
 
 
     return (
-        <section className="bg-base-200 w-full flex items-center justify-center" id='banner'>
+        <section className="bg-base-200 w-full flex items-center justify-center h-[80vh] md:h-screen lg:h-[75vh]" id='banner'>
 
 
-            <div className="flex-col lg:flex lg:flex-row-reverse gap-8 max-width min-width aspect-video lg:items-center p-4">
+            <div className="flex-col lg:flex lg:flex-row-reverse gap-8 max-width min-width md:aspect-video lg:items-center  p-4 lg:p-8">
                 {/* slider */}
-                <div className="w-5/6 mx-auto  rounded-lg shadow-2xl overflow-hidden lg:w-1/2 my-6  ">
+                <div className="w-full sm:w-[75%] mx-auto  rounded-lg shadow-2xl overflow-hidden lg:w-1/2 my-4 ">
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}
@@ -39,14 +39,15 @@ function Banner({ }: Props) {
                         // }}
                         loop={true}
                         modules={[Autoplay]}
-                        className="mySwiper"
+                        className="mySwiper "
                     >
                         <SwiperSlide>
                             <Image
                                 alt='banner'
                                 src="/images/banner003.jpg"
-                                width={450}
-                                height={320}
+                                width={300}
+                                height={200}
+                                className="object-cover md:2-[80%]"
                                 layout="responsive"
                             />
                         </SwiperSlide>
