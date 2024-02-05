@@ -97,7 +97,7 @@ const AboutAndAnthem = () => {
                         <h4 className={`${newsReader.className} text-xl font-bold border-b-2 border-gray-200 mb-4`}>National Anthem</h4>
                         <p className="mb-4 text-sm md:text-[15px] leading-6">
                             Arise, O compatriots
-                            <br /> Nigeria's call obey
+                            <br /> Nigeria&apos;s call obey
                             Arise, O compatriots
                             <br />
                             Nigeria&apos;s call obey
