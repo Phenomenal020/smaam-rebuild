@@ -30,8 +30,8 @@ const GlanceComponent = () => {
 
           const foundingYearTimer = setInterval(() => {
             setGlance((prevGlance) => {
-              if (prevGlance.foundingYear < 2017) {
-                return { ...prevGlance, foundingYear: prevGlance.foundingYear + 20.17 };
+              if (prevGlance.foundingYear < 2018) {
+                return { ...prevGlance, foundingYear: prevGlance.foundingYear + 20.18 };
               } else {
                 clearInterval(foundingYearTimer);
                 return prevGlance;
@@ -64,7 +64,7 @@ const GlanceComponent = () => {
           const passRateTimer = setInterval(() => {
             setGlance((prevGlance) => {
               if (prevGlance.passRate < 100) {
-                return { ...prevGlance, passRate: prevGlance.passRate + 10 };
+                return { ...prevGlance, passRate: prevGlance.passRate + 1 };
               } else {
                 clearInterval(passRateTimer);
                 return prevGlance;

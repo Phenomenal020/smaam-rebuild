@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ContactSection from './Container';
+// import ContactSectionAlt from './ContainerAlt';
 
 function Page() {
   // const pageVariants = {
@@ -34,7 +35,8 @@ function Page() {
     //   variants={pageVariants}
     //   transition={pageTransition}
     // >
-      <ContactSection />
+      <ContactSection  />
+      // <ContactSectionAlt  />
     // </motion.section>
   );
 }

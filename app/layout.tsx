@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
+import { Toaster } from "react-hot-toast";
 
 import { figtree } from '@/utils/fonts'
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={figtree.className}>
         <Navbar />
         {children}
+        <Toaster position='top-right' />
         <Footer />
       </body>
     </html>

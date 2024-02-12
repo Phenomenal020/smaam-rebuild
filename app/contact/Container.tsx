@@ -2,12 +2,15 @@ import React from 'react';
 import { AiOutlineMail, AiOutlinePhone, AiOutlineHome } from "react-icons/ai";
 import { BsSend } from "react-icons/bs";
 import Header from '../_components/Header';
+import FormUi from './form';
 
 const ContactSection = () => {
+
     return (
+
         <>
             <Header text="Contact us" />
-            <section className='w-full bg-gray-100 p-4' id='contact-page'>
+            <section className='w-full bg-gray-100 p-4 fadeIn' id='contact-page'>
                 <div className="bg-gray-100 text-gray-800 md:p-12 max-width min-w-[360px]">
                     <div className="mx-auto">
                         <div className="flex flex-col md:flex-row gap-8">
@@ -54,40 +57,7 @@ const ContactSection = () => {
                                         <BsSend size={30} className="text-white" />
                                     </div>
                                     <h4 className="text-xl font-semibold my-4 text-center">General Enquiry</h4>
-                                    <form className="flex flex-col space-y-2 text-[#000] justify-center">
-                                        <input
-                                            type="text"
-                                            placeholder="Your Full Name"
-                                            name="name"
-                                            id="name"
-                                            className="form-input px-4 py-2 rounded"
-                                        />
-                                        <input
-                                            type="email"
-                                            placeholder="Your Email Address"
-                                            name="email"
-                                            id="email"
-                                            className="form-input px-4 py-2 rounded"
-                                        />
-                                        <input
-                                            type="tel"
-                                            placeholder="Your Phone Number"
-                                            name="phone"
-                                            id="phone"
-                                            className="form-input px-4 py-2 rounded"
-                                        />
-                                        <textarea
-                                            name="enquiry"
-                                            id="enquiry"
-                                            cols={30}
-                                            rows={8}
-                                            placeholder="Your Enquiry"
-                                            className="form-textarea px-4 py-2 rounded"
-                                        ></textarea>
-                                        <button type="submit" className="btn bg-white text-blue-800 font-bold py-2 rounded hover:bg-blue-800 hover:text-white hover:border-0 text-base">
-                                            Submit Enquiry
-                                        </button>
-                                    </form>
+                                   <FormUi />
                                 </div>
                             </div>
 
@@ -101,4 +71,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-

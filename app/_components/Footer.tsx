@@ -95,7 +95,7 @@ export default function Footer() {
                 <Link href="/blog">news</Link>
               </p>
               <p className={styles.linkHeader}>
-                <Link href="/#testimonials">testimonials</Link>
+                <Link href="/#testimonial">testimonials</Link>
               </p>
             </div>
 

@@ -8,7 +8,7 @@ import About from "./_components/welcome";
 
 export default function Container() {
   return (
-    <main>
+    <main className="fadeIn">
       <Banner />
       <About />
       <Glance />

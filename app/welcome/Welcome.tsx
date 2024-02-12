@@ -7,7 +7,7 @@ const FoundersNote = () => {
     return (
         <>
             <Header text="Founder&apos;s Note" />
-            <section className="bg-white text-gray-800 py-10 max-width min-width " id='founder-note-page'>
+            <section className="bg-white text-gray-800 py-10 max-width min-width fadeIn" id='founder-note-page'>
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div className="mb-4 md:mb-0">
