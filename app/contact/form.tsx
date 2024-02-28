@@ -60,7 +60,7 @@ function FormUi({ }: Props) {
                 required
             ></textarea>
 
-            <button type="submit" className="btn bg-white text-blue-800 font-bold py-2 rounded hover:bg-blue-800 hover:text-white hover:border-0 text-base" >
+            <button type="submit" className="btn bg-white text-blue-800 font-bold py-2 rounded hover:bg-gray-200 hover:text-blue-800 hover:border-0 text-base" >
                 Submit Enquiry
             </button>
         </form>
