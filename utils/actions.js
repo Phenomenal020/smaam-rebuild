@@ -13,7 +13,8 @@ export async function sendEmail(formData) {
     const enquiry = formData.get('enquiry')
     try {
         const { data, error } = await resend.emails.send({
-            from: 'Website Contact Form - <onboarding@resend.dev>',
+            from: 'Website Contact Form - https://stmichaelthearchangelacademy.com',
+            // to: 'st.michaelthearchangelacademy2@gmail.com',
             to: 'alphask37@gmail.com',
             subject: 'New Contact Us Submission',
             reply_to: email,
